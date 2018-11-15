@@ -1,0 +1,5 @@
+# macOS common files
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
