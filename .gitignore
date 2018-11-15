@@ -49,3 +49,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Visual Studio cache directory
+.vs/
+
+# JetBrains cache directory
+.idea/
