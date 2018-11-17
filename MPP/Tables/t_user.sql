@@ -4,5 +4,7 @@ CREATE TABLE `t_user` (
     `password` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL, 
     `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL, 
     `signup_date` timestamp NOT NULL, 
-    PRIMARY KEY (`user_id`)
-) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci
+    PRIMARY KEY (`user_id`), 
+    UNIQUE KEY `email` (`email`), 
+    UNIQUE KEY `username` (`username`)
+) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci
